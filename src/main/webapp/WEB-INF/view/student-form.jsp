@@ -15,15 +15,14 @@
 <%--@elvariable id="student" type="com.lunarshade.spring_mvc_demo.web.entity.Student"--%>
     <form:form action="processForm" modelAttribute="student">
         First Name <form:input path="firstName"/>
-
         <br><br>
-
         Last Name <form:input path="lastName"/>
-
         <br><br>
-
+        <form:select path="country">
+            <form:options items="${student.countries}"/>
+        </form:select>
+        <br><br>
         <input type="submit" value="Submit"/>
-
     </form:form>
 </body>
 </html>
