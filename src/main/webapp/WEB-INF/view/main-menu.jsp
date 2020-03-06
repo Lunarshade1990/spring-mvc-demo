@@ -3,6 +3,8 @@
 <body>
 <h2>Spring MVC DEMO - Home Page</h2>
 <hr>
-<a href="student/showForm">Hello world form</a>
+<a href="student/showForm">Student form</a>
+<br><br>
+<a href="customer/showForm">Customer form</a>
 </body>
 </html>

@@ -22,6 +22,13 @@
             <form:options items="${student.countries}"/>
         </form:select>
         <br><br>
+        Favorite language:
+        <br>
+        <form:radiobuttons path="favouriteLanguage" items="${student.languages}"/>
+        <br><br>
+        Operating system:
+        Linux <form:checkboxes path="operatingSystems" items="${student.systemList}"/>
+        <br><br>
         <input type="submit" value="Submit"/>
     </form:form>
 </body>
